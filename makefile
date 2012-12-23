@@ -9,11 +9,13 @@ all: build css js
 
 
 build:
-	rm -rf $(BUILD_FOLDER)
-	mkdir $(BUILD_FOLDER)
-	mkdir $(BUILD_FOLDER)/css
-	mkdir $(BUILD_FOLDER)/js
-	cp index.html $(BUILD_FOLDER)/index.html
+	rm -rf        $(BUILD_FOLDER)
+	mkdir         $(BUILD_FOLDER)
+	mkdir         $(BUILD_FOLDER)/css
+	mkdir         $(BUILD_FOLDER)/js
+	cp index.html $(BUILD_FOLDER)
+	cp beep.mp3   $(BUILD_FOLDER)
+	cp beep.ogg   $(BUILD_FOLDER)
 
 
 js:
