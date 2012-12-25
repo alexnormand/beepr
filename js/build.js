@@ -11,6 +11,11 @@
     countdown      : 'libs/countdown'
   },
 
+  shim: {
+    'countdown': {
+      exports: 'countdown'
+    }
+  },
 
   modules: [
     {
