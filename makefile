@@ -28,11 +28,11 @@ css:
 
 
 install:
-	rm -rf $(JS_LIBS_PATH)/*
-	mkdir $(JS_LIBS_PATH)/requirejs
+	rm -rf $(JS_LIBS_PATH)
+	mkdir -p $(JS_LIBS_PATH)/requirejs
 	curl -L https://bitbucket.org/mckamey/countdown.js/raw/tip/countdown.js > $(JS_LIBS_PATH)/countdown.js
 	curl -L https://raw.github.com/ftlabs/fastclick/master/lib/fastclick.js > $(JS_LIBS_PATH)/fastclick.js
-	curl -L https://raw.github.com/jashkenas/coffee-script/1.4.0/lib/coffee-script/coffee-script.js > $(JS_LIBS_PATH)/coffee-script.js
+	curl -L https://raw.github.com/jashkenas/coffee-script/master/extras/coffee-script.js > $(JS_LIBS_PATH)/coffee-script.js
 	curl -L http://requirejs.org/docs/release/2.1.2/minified/require.js > $(JS_LIBS_PATH)/requirejs/require.js
 	curl -L https://raw.github.com/jrburke/require-cs/latest/cs.js > $(JS_LIBS_PATH)/requirejs/cs.js
 	npm install
